@@ -1,0 +1,6 @@
+{
+  "StartupItem": "druntime",
+  "Projects": [
+    "druntime.acproj"
+  ]
+}

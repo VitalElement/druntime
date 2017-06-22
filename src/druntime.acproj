@@ -1,0 +1,58 @@
+{
+  "References": [],
+  "Toolchain": "AvalonStudio.Toolchains.LDC.LDCToolchain",
+  "ExcludedFiles": [
+    "test_runner.d",
+    "core/sys",
+    "core/stdcpp",
+    "core/stdc"
+  ],
+  "Type": "StaticLibrary",
+  "Includes": [
+    {
+      "Value": "./",
+      "Exported": false,
+      "Global": false
+    }
+  ],
+  "StaticLibraries": [],
+  "ToolchainSettings": {
+    "AvalonStudio.Toolchains.GCC.GccToolchainSettings": {
+      "CompileSettings": {
+        "Defines": [],
+        "Includes": [],
+        "DebugInformation": true,
+        "Rtti": false,
+        "Exceptions": false,
+        "CustomFlags": "-mtriple=thumb-none-linux-eabi  -lib -betterC -release -boundscheck=off ",
+        "CLanguageStandard": "Default",
+        "CppLanguageStandard": "Default",
+        "Optimization": "None",
+        "OptimizationPreference": "Speed",
+        "Fpu": "None"
+      },
+      "LinkSettings": {
+        "LinkedLibraries": [],
+        "LinkerScripts": [],
+        "UseMemoryLayout": false,
+        "DiscardUnusedSections": false,
+        "NotUseStandardStartupFiles": false,
+        "Library": "None",
+        "SelectedDeviceId": 0,
+        "InRom1Start": 0,
+        "InRom1Size": 0,
+        "InRom2Start": 0,
+        "InRom2Size": 0,
+        "InRam1Start": 0,
+        "InRam1Size": 0,
+        "InRam2Start": 0,
+        "InRam2Size": 0,
+        "DebugInRam": false
+      }
+    }
+  },
+  "DebugSettings": {},
+  "Settings": {
+    "AvalonStudio.Projects.CPlusPlus.BuildEventsSettings": {}
+  }
+}
