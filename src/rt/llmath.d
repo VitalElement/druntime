@@ -187,7 +187,10 @@ quo1:       // Quotient is 1
         }
     }
     else version (D_InlineAsm_X86_64)
-        assert(0);
+        assert(0);    
+    else version (ARM)
+    {
+    }
     else
         static assert(0);
 }
@@ -356,6 +359,9 @@ quo1:       // Quotient is 1
     }
     else version (D_InlineAsm_X86_64)
         assert(0);
+    else version (ARM)
+    {
+    }
     else
         static assert(0);
 }
@@ -433,6 +439,9 @@ L12:        jmp     __ULDIV2__      ;
     }
     else version (D_InlineAsm_X86_64)
         assert(0);
+    else version (ARM)
+    {
+    }
     else
         static assert(0);
 }
@@ -492,6 +501,9 @@ L12:        jmp     __ULDIV__       ;
     }
     else version (D_InlineAsm_X86_64)
         assert(0);
+    else version (ARM)
+    {
+    }
     else
         static assert(0);
 }

@@ -2510,7 +2510,7 @@ else
                 // Callee-save registers, according to AAPCS, section 5.1.1.
                 // arm and thumb2 instructions
                 size_t[8] regs = void;
-                __asm("stm  $0, {r4-r11}", "r", regs.ptr);
+                //__asm("stm  $0, {r4-r11}", "r", regs.ptr);
                 sp = __asm!(void*)("mov $0, sp", "=r");
             }
             else version (MIPS64)

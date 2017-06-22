@@ -872,6 +872,21 @@ else version (D_InlineAsm_X86_64)
         }
     }
 }
+else version (ARM)
+{
+extern (D)
+    {
+        void QueryPerformanceCounter(timer_t* ctr)
+        {
+            
+        }
+
+        void QueryPerformanceFrequency(timer_t* freq)
+        {
+            *freq = 3579545;
+        }
+    }
+}
 else
 {
     static assert(0);

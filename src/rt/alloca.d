@@ -274,6 +274,10 @@ extern (C) void* __alloca(int nbytes)
     }
     }
   }
+  else version (ARM)
+  {
+    return null;
+  }
   else
         static assert(0);
 }
